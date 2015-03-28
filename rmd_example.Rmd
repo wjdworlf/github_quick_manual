@@ -1,10 +1,10 @@
-# 1. 데이터 수집
+# 1. 데이터 수집 - Modified
 ## (1) Data 수집 script
 ### Quandl library load
 Quandl 패키지를 이용해 데이터 수집을 하기 위해 패키지를 설치하고, 메모리로 로드시킨다. 저자는 패키지가 설치되어 있으므로 이 부분은 생략한다.
 
 ```{r}
-# install.packages("sqldf")
+# install.packages("Quandl") <-- install.packages("sqldf")
 library(Quandl)
 
 fx_krw_usd<-Quandl("CURRFX/USDKRW", trim_start="2009-07-01", trim_end="2014-06-30")
@@ -52,9 +52,9 @@ fx_krw_aud | Quandl("CURRFX/AUDKRW")
 ## (4) KRX 자료 다운로드
 
 (a) KRX 지수 찾기 (italic)
-지수사이트에 접속해 *KRX지수* > _주가지수_ > _KRX시리즈_를 선택한다.
+지수사이트에 접속해 *KRX지수* > _주가지수_ > _KRX시리즈_ 를 선택한다. (수정: _뒤에 띄어쓰기 삽입)
 
 (b) KRX 금리 찾기 (bold)
-지수사이트에 접속해 **KRX지수** > __채권지수__ > __KRX채권지수__를 선택한다.
+지수사이트에 접속해 **KRX지수** > __채권지수__ > __KRX채권지수__ 를 선택한다. (수정: __뒤에 띄어쓰기 삽입)
 
 ![icon1](http://index.krx.co.kr/inc/img/cm/icon_device_default.ico)
